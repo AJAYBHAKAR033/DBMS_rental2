@@ -4,7 +4,7 @@
 }
 .home_body{
     /* background-color: rgb(0, 0, 0); */
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
     width:100vw;
     height:100vh;
     display:flex;
@@ -14,7 +14,7 @@
 }
 .home_container{
     color: white;
-    background-image: linear-gradient(to right,black  0%,  #434343 100%);
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
 
     font-size: 4rem;
     line-height: 6rem;
@@ -34,7 +34,7 @@
 .home_body a{
     text-decoration: none;
     /* color:black; */
-    background-image: linear-gradient(to right,black  0%,  #434343 100%);
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
     font-size:2rem;
     font-weight:400;
     font-family: 'Ubuntu', sans-serif;

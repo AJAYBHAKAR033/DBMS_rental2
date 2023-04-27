@@ -11,7 +11,7 @@ const con = mysql.createConnection({
   database: "dream_home"
 });
 
-const AdminLogin = async (req, res) => {
+const OwnerLogin = async (req, res) => {
   console.log(req.body);
   const { userTyp,id, pass } = req.body;
 
@@ -44,4 +44,4 @@ const AdminLogin = async (req, res) => {
   });
 };
 
-module.exports = { AdminLogin };
+module.exports = { OwnerLogin };

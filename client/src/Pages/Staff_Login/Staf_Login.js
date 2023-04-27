@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './Staff_login.css'
 function Staf_Login() {
-    const [staffId, ChangeStaffId] = useState('');
-    const [Password, ChangePassword] = useState('');
+    const [id, ChangeStaffId] = useState('');
+    const [pass, ChangePassword] = useState('');
+    const [userTyp,setUsertyp]=useState('S');
     const [message, setMeassage] = useState('');
 
 
@@ -10,24 +11,26 @@ function Staf_Login() {
         const response=await fetch('/staffLogin',{
             method:'POST',
             body:JSON.stringify({
-                staffId,
-                Password
+                userTyp,
+                id,
+                pass,
             }),
             headers: { 'Content-type': 'application/json' },
         });
-        const json=response.json();
-        if(json.msg==='FAILED')
+        const json=await response.json();
+        console.log(json);
+        if(json.err==='FAILED')
         {
             setMeassage('Try Again!');
         }
         else{
-            window.location.replace('http://localhost:3000/')
+            window.location.replace('http://localhost:3000/afterStaffLogin')
         }
     }
 
     return (
         <div className='e-login_2' >
-            <form className='login-form_2' name="stafflogin">
+            <form className='login-form_2' name="stafflogin" onSubmit={handleForm}>
                 <div className='main-container_2'>
                     <div className='reg-con_2' id='reg-con_2' >
                         <div className="register_2"> <div> Staff Login<br /></div></div>
@@ -42,7 +45,7 @@ function Staf_Login() {
                             <span class="material-symbols-outlined">
                                     person
                                 </span>
-                                <input className='inp_2' type='text' value={staffId} placeholder="Staff Id" onChange={(e) => ChangeStaffId(e.target.value)} ></input>
+                                <input className='inp_2' type='text' value={id} placeholder="Staff Id" onChange={(e) => ChangeStaffId(e.target.value)} ></input>
                             </div>
 
                         </div>
@@ -51,14 +54,14 @@ function Staf_Login() {
                                 <span class="material-symbols-outlined">
                                     lock
                                 </span>
-                                <input className='inp_2' type='text' value={Password} placeholder="Password" onChange={(e) => ChangePassword(e.target.value)} ></input>
+                                <input className='inp_2' type='text' value={pass} placeholder="Password" onChange={(e) => ChangePassword(e.target.value)} ></input>
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div className='Buttons1_2'>
-                    <button className='submit-button_2' type='submit' form="stafflogin" >SUBMIT</button>
+                    <button className='submit-button_2' type='submit' >SUBMIT</button>
                 </div>
             </form>
         </div>

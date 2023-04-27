@@ -1,0 +1,52 @@
+.container {
+    background-color: black;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .heading_comments{
+    color:white;
+    height:10rem;
+    padding-top:4.5rem;
+    font-size: 3rem;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 800;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  .table {
+    margin: 0 auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid white;
+  }
+  
+  th, td {
+    padding: 12px;
+  }
+  
+  thead {
+    background-color: #333;
+  }
+  
+  th {
+    background-color: #444;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #222;
+  }
+  
+  tr{
+    
+    border-bottom: 0.1rem dashed white;
+  }

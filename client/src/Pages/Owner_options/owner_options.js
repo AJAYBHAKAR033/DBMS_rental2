@@ -7,7 +7,7 @@ function owner_options() {
   }
 
   const handleAddBranch=()=>{
-    window.location.replace('http://localhost:3000/branchadd')
+    window.location.replace('http://localhost:3000/comments')
   }
 
   return (

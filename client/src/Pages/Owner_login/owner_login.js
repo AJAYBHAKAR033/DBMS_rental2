@@ -11,7 +11,7 @@ function Ownerlogin() {
 
     const handleForm=async (e)=>{
         e.preventDefault();
-        const response=await fetch('/adminLogin',{
+        const response=await fetch('/ownerLogin',{
             method:'POST',
             body:JSON.stringify({
                 userTyp,

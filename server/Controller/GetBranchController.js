@@ -3,14 +3,17 @@ const mysql = require('mysql');
 const con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "20270508",
+    password: "sql@2002",
     database: "dream_home"
 });
 const GetBranch = (req, res) => {
 
-    // console.log('hii');
-    const sql =`Select * from branch_details`;
-
+    const city=req.body.City;
+    let sql =`Select * from branch_details`;
+    if(city)
+    {
+        sql += ` WHERE City LIKE '%${city}%'`;
+    }
     con.query(sql, function (err, result) {
         if (err) {
             res.json({

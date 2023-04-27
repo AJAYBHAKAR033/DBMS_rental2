@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
    
 }
 .login-form_1-branch
@@ -29,7 +30,9 @@
     height: 65vh;
     width: 42vw;
     /* background-image: url('./Images/back.jpg'); */
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
+
     /* background-color: black; */
     position: relative;
     box-sizing: border-box;
@@ -61,6 +64,7 @@
     border-radius: 5rem;
     transition: opacity 0.5s ease-in;
     background-color: #13232f;
+   
 }
 .Button-branch
 {
@@ -213,7 +217,8 @@
     margin: 1vw;
     box-sizing: border-box;
     width: 95%;
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background: none;
     color:  #a0b3b0;
     /* border-style: solid; */
     outline: none;
@@ -229,7 +234,8 @@
     margin: 0.8vw;
     box-sizing: border-box;
     width: 80%;
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background: none;
     color:  #a0b3b0;
     /* border-style: solid; */
     outline: none;

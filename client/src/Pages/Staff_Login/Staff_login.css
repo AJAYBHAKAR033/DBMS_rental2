@@ -20,14 +20,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
 }
 
 .login-form_2 {
     height: 60vh;
     width: 40vw;
     /* background-image: url('./Images/back.jpg'); */
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
     /* background-color: black; */
     position: relative;
     box-sizing: border-box;
@@ -203,7 +204,7 @@
     flex-direction: row;
     align-items: center;
     /* margin:0% 0% 0% 2%; */
-    justify-content: flex-start;
+    justify-content:space-between;
     box-sizing: border-box;
 }
 
@@ -235,12 +236,13 @@
     padding: 0% 0% 0% 4%;
     height: 80%;
     box-sizing: border-box;
-    width: 100%;
+    width: 96%;
     background-color: #13232f;
     color: #a0b3b0;
     /* border-style: solid; */
     outline: none;
     border: none;
+    background: none;
     /* border-radius: 20%; */
     position: relative;
 

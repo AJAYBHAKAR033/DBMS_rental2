@@ -19,6 +19,7 @@
     border-collapse: collapse;
     background-color: black;
     color: white;
+   
   }
   
   .result th,
@@ -33,5 +34,9 @@
   }
   .result{
     border:1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   

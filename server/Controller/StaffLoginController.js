@@ -11,7 +11,7 @@ const con = mysql.createConnection({
   database: "dream_home"
 });
 
-const AdminLogin = async (req, res) => {
+const StaffLogin = async (req, res) => {
   console.log(req.body);
   const { userTyp,id, pass } = req.body;
 
@@ -25,7 +25,7 @@ const AdminLogin = async (req, res) => {
       if (user.Pass === pass) {
         console.log("Signed In");
         res.cookie('userId',id);
-        res.status(500).json({
+        res.json({
             err: "PASSED",
             msg: "User exist",
           });
@@ -44,4 +44,4 @@ const AdminLogin = async (req, res) => {
   });
 };
 
-module.exports = { AdminLogin };
+module.exports = { StaffLogin };

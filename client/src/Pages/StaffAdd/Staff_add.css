@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; */
+
 }
 
 .e-login
@@ -12,6 +13,8 @@
     position: absolute;
     /* margin: 20vh 30vw; */
     /* background-color: #13232f; */
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
+
     height: 100vh;
     width: 100vw;
     /* background-color: black; */
@@ -28,7 +31,9 @@
     height: 70vh;
     width: 45vw;
     /* background-image: url('./Images/back.jpg'); */
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
+
     /* background-color: black; */
     position: relative;
     box-sizing: border-box;
@@ -127,7 +132,9 @@
 .main-container
 {
     height: 87%;
-    width:100%
+    width:100%;
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
+
 }
 .register
 {
@@ -140,6 +147,7 @@
     position: relative;
     height: 60%;
     width: 100%;
+    
 }
 .content-1 
 {
@@ -151,6 +159,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
 }
 .sub-content-1 
 {
@@ -190,7 +199,8 @@
 .sub-content-2 img{
     height: 80%;
     width: 5%;
-    background-color: #13232f;
+    /* background-color: #13232f; */
+
     /* background-color: black; */
     object-fit: contain;
 }
@@ -204,11 +214,13 @@
 }
 .inp{
     padding: 0% 0% 0% 0%;
-    margin: 0%;
+    margin-left: 2.5%;
     height:80%;
     box-sizing: border-box;
     width: 94%;
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    /* background-image: linear-gradient(to right,#13232f  0%,  #434343 100%); */
+    background:none;
     color:  #a0b3b0;
     /* border-style: solid; */
     outline: none;
@@ -222,8 +234,10 @@
     /* margin-left: 1%; */
     height:80%;
     box-sizing: border-box;
-    width: 87.5%;
-    background-color: #13232f;
+    width: 88.5%;
+    /* background-color: #13232f; */
+    /* background-image: linear-gradient(to right,#13232f  0%,  #434343 100%); */
+    background:none;
     color:  #a0b3b0;
     /* border-style: solid; */
     outline: none;
@@ -240,11 +254,14 @@ input[type=date]:focus::-webkit-datetime-edit {
 } */
 .select {
     padding: 0% 0% 0% 0%;
+    margin-left: 2%;
     height:80%;
     box-sizing: border-box;
     width: 94%;
     color:  #a0b3b0;
-    background-color: #13232f;
+    background:none;
+    /* background-image: linear-gradient(to right,#13232f  0%,  #434343 100%); */
+
     /* background-color: black; */
     outline: none;
     border: none;
@@ -263,7 +280,8 @@ input[type=date]:focus::-webkit-datetime-edit {
     position: absolute;
     padding: 0% 2%;
     box-sizing: border-box;
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
     transition: ease-in 0.5s;
     /* background-color: black; */
     z-index: 1;

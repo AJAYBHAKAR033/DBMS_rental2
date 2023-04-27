@@ -12,12 +12,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
 }
 
 .Owner-Registeration-div {
     height: 70vh;
     width: 40vw;
-    background-color: #13232f;
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
     position: relative;
     box-sizing: border-box;
     border-style: solid;
@@ -179,7 +180,7 @@
     width: 90%;
     margin: 0%;
     color: #a0b3b0;
-    background-color: #13232f;
+    background: none;
     outline: none;
     border: none;
 }
@@ -188,7 +189,7 @@
     width: 95%;
     margin: 0%;
     color: #a0b3b0;
-    background-color: #13232f;
+    background: none;
     outline: none;
     border: none;
 }

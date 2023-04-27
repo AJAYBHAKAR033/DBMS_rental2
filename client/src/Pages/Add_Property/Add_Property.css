@@ -14,6 +14,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to right, #434343 0%, #13232f 100%);
+
 }
 .blur-background
 {
@@ -29,7 +31,8 @@
     /* top: 15vh;
     left: 30vw; */
     /* opacity: 1; */
-    background-color: #13232f;
+    /* background-color: #13232f; */
+    background-image: linear-gradient(to right,#13232f  0%,  #434343 100%);
     position: absolute;
     box-sizing: border-box;
     border-style: solid;
@@ -152,16 +155,16 @@
 
 .Property-Input {
     height: 80%;
-    width: 100%;
-    background-color: #13232f;
+    width: 94%;
+    background:none;
     outline: none;
     border: none;
 }
 .Property-Input-1 {
     height: 80%;
-    width: 100%;
+    width: 80%;
     padding: 0rem 0.7rem;
-    background-color: #13232f;
+    background:none;
     outline: none;
     border: none;
 }

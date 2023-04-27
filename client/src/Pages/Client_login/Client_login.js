@@ -4,7 +4,7 @@ import './client_login.css'
 function Clientlogin() {
     const [id, setId]=useState('');
     const [pass,setPass]= useState('');
-    const [userTyp,setUsertyp]=useState('A');
+    const [userTyp,setUsertyp]=useState('C');
     const [message,setMessage]=useState('');
 
     
@@ -27,7 +27,7 @@ function Clientlogin() {
             setMessage(json.msg);
         }
         else{
-            window.location.replace('http://localhost:3000/clientoptions')
+            window.location.replace('http://localhost:3000/clientAfterLogin')
         }
         console.log(json);
 
